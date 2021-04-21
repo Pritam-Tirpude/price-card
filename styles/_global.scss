@@ -1,0 +1,35 @@
+$header1: 4rem;
+$header2: 3.5rem;
+$header3: 2.5rem;
+$header4: 2rem;
+$header5: 1.5rem;
+$header6: 1rem;
+
+$primary_cyan: hsl(179, 62%, 43%);
+$primary_bright_yellow: hsl(71, 73%, 54%);
+$neutral_light_gray: hsl(204, 43%, 93%);
+$neutral_grayish_blue: hsl(218, 22%, 67%);
+$neutral_white: hsl(0, 0%, 100%);
+
+@mixin flex($justify, $align, $direction) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-direction: $direction;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  min-height: 100vh;
+  background: $neutral_light_gray;
+  font-family: "Karla", sans-serif;
+}
